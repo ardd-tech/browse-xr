@@ -7,7 +7,7 @@ from wagtail import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
 from search import views as search_views
-from home.views import CreateGLTF
+from home.views import CreateGLTF, CreateImage, ListGLTF, DetailGLTF
 
 urlpatterns = [
     path("django-admin/", admin.site.urls),
@@ -15,6 +15,9 @@ urlpatterns = [
     path("documents/", include(wagtaildocs_urls)),
     path("search/", search_views.search, name="search"),
     path("upload/", CreateGLTF.as_view(), name="upload"), # TODO: Move upload to admin panel
+    path("upload-image/", CreateImage.as_view(), name="upload"), # TODO: Move upload to admin panel
+    path("gallery/", ListGLTF.as_view(), name="upload"), # TODO: Move upload to admin panel
+    path("gallery-detail/", DetailGLTF.as_view(), name="upload"), # TODO: Move upload to admin panel
 ]
 
 

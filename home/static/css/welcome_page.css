@@ -2,6 +2,16 @@ html {
     box-sizing: border-box;
 }
 
+/* TODO: Remove!*/
+
+div {
+    border: blue 3px solid;
+}
+
+a-scene {
+    border: red 3px solid;
+}
+
 *,
 *:before,
 *:after {

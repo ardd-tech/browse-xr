@@ -230,7 +230,16 @@ class GLTF_Plus_ImageField(models.FileField):
                 **kwargs,
             }
         )
-    
+
+class GLTF_scene(models.Model):
+    pass
+
+
+class GLTF_primitives(models.Model):
+    """_summary_
+        Many to one primitives for GLTF_Plus_ImageField
+    """ 
+    pass  
 
 # https://docs.wagtail.org/en/stable/advanced_topics/images/custom_image_model.html
 # 3D Image model
@@ -239,6 +248,9 @@ class GLTF_Plus_Image(AbstractImage):
     width = models.IntegerField(verbose_name=_("width"), editable=False, default=1024)
     height = models.IntegerField(verbose_name=_("height"), editable=False, default=1024)
     file = GLTF_Plus_ImageField()
+    # primitives field will have multiple primitives in the future 
+    # scene = scene_info_here
+    # primitive = primitive_info_here
     context = models.CharField(max_length=255)
     admin_form_fields = Image.admin_form_fields + (
         # Add the fields for images here 

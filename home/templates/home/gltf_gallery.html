@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+{% comment %}
+Delete the line below if you're just getting started and want to remove the welcome screen!
+{% endcomment %}
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% endblock extra_css %}
+
+{% block extra_js %}
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+{% endblock extra_js %}
+
+{% block content %}
+<div style="height:100vh">
+    {% for item in GLTF_Plus_Image %}
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="boba" src="{{ item }}"></a-asset-item>
+        </a-assets>
+        <a-entity position="0 2 -1" gltf-model="#boba"></a-entity>
+    </a-scene>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="boba" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity position="0 2 -1" gltf-model="#boba"></a-entity>
+    </a-scene>
+    {% endfor %}
+</div>
+{% comment %}
+Delete the line below if you're just getting started and want to remove the welcome screen!
+{% endcomment %}
+
+{% endblock content %}
