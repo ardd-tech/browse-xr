@@ -11,10 +11,12 @@ class CreateGLTF(CreateView):
 class DetailGLTF(DetailView):
     model = GLTF_Plus_Image
     template_name = 'home/gltf_detail.html'
+    context_object_name = 'gltf'
 
 class ListGLTF(ListView):
     model = GLTF_Plus_Image
     template_name = 'home/gltf_gallery.html'
+    context_object_name = 'gltfs'
 
 
 class CreateImage(CreateView):
