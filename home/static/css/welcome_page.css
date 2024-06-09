@@ -4,13 +4,19 @@ html {
 
 /* TODO: Remove!*/
 
-div {
+#app {
     border: blue 3px solid;
+    top: 0;
+    bottom: 0;
+    display: flex;
 }
 
 a-scene {
-    border: red 3px solid;
+    border: red 3px dashed;
+    width: 60vw;
+    height: 60vh;
 }
+
 
 *,
 *:before,
