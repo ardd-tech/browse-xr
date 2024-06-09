@@ -20,9 +20,9 @@ Delete the line below if you're just getting started and want to remove the welc
 <!-- <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script> -->
 {% endblock extra_js %}
 {% block content %}
-<div id="app" style="width: 80vw; height: 80vh;">
-
-    <a-scene id="demoScene" 
+<div id="app">
+<div id="dis">
+    <a-scene id="displayOne" 
       background-color="white" 
       embedded
       vr-mode-ui="enabled: true; 
@@ -59,11 +59,103 @@ Delete the line below if you're just getting started and want to remove the welc
       
       <a-assets>
         <a-asset-item id="boba" src="https://cdn.glitch.com/90a30469-f038-4054-be9c-fd1ec94a810d%2Fkitchentest.glb"></a-asset-item>
-
+        <a-asset-item id="city" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
       </a-assets>
 
       <a-entity position="0 2 -1" gltf-model="#boba"></a-entity>
+      
     </a-scene>
+
+    <a-scene id="displayTwo" 
+      background-color="white" 
+      embedded
+      vr-mode-ui="enabled: true; 
+      enterVREnabled: true; 
+      enterVRButton: #vrMode;"
+      loading-screen="enabled: false"
+      stats="enabled"
+      >
+      <!--
+        these properties go into a-scene tag above
+        environment="preset:forest; skyColor: white; groundType: hills;
+        gridType: 4x4; gridColor: #34c397;"
+      -->
+     
+
+      <a-entity id="playerView">
+        <!--Animation="property: object3D.position.z; 
+      to: -50;
+      from: 0; 
+      loop: true;   //these properties go within the a-entity tag above 
+      dur:100000; 
+      dir: normal;
+      ease: 0.3;
+      "-->
+        <a-camera position="0 2 -0.8">
+          
+        </a-camera>
+
+      </a-entity>
+
+      <a id="vrMode" href="#"></a>
+      <a id="vrMode" href="#"></a>
+      
+      
+      <a-assets>
+        <a-asset-item id="boba" src="https://cdn.glitch.com/90a30469-f038-4054-be9c-fd1ec94a810d%2Fkitchentest.glb"></a-asset-item>
+        <a-asset-item id="city" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
+      </a-assets>
+
+      
+      <a-entity position="0 0 -20" gltf-model="#city"></a-entity>
+    </a-scene>
+    <a-scene id="displayThree" 
+      background-color="white" 
+      embedded
+      vr-mode-ui="enabled: true; 
+      enterVREnabled: true; 
+      enterVRButton: #vrMode;"
+      loading-screen="enabled: false"
+      stats="enabled"
+      >
+      <!--
+        these properties go into a-scene tag above
+        environment="preset:forest; skyColor: white; groundType: hills;
+        gridType: 4x4; gridColor: #34c397;"
+      -->
+     
+
+      <a-entity id="playerView">
+        <!--Animation="property: object3D.position.z; 
+      to: -50;
+      from: 0; 
+      loop: true;   //these properties go within the a-entity tag above 
+      dur:100000; 
+      dir: normal;
+      ease: 0.3;
+      "-->
+        <a-camera position="0 2 -0.8">
+          
+        </a-camera>
+
+      </a-entity>
+
+      <a id="vrMode" href="#"></a>
+      <a id="vrMode" href="#"></a>
+      
+      
+      <a-assets>
+        <a-asset-item id="boba" src="https://cdn.glitch.com/90a30469-f038-4054-be9c-fd1ec94a810d%2Fkitchentest.glb"></a-asset-item>
+        <a-asset-item id="city" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-entity position="0 2 -1" gltf-model="#boba"></a-entity>
+
+    </a-scene>
+
+</div>
+
+
     <!-- <a-scene>
         <a-assets>
             <a-asset-item id="boba" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
