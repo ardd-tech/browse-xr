@@ -1,4 +1,5 @@
 {
+    // Evaluating your database via VS Code
     "sqltools.useNodeRuntime": true,
     "sqltools.connections": [
         {
@@ -7,5 +8,67 @@
             "name": "browse-boba",
             "database": "${workspaceFolder:browse-boba}/db.sqlite3"
         }
-    ]
+    ],
+    // Python
+    "[python]": {
+        "editor.formatOnType": true
+    },
+
+    // Efficiency
+    "files.autoSave": "afterDelay",
+    "editor.mouseWheelZoom": true,
+    "python.terminal.activateEnvironment": true,
+    "workbench.settings.editor": "json",
+
+    // Terminal
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu"
+            ]
+        }
+    },
+
+    // Experiments
+    "python.experiments.optInto": [
+        "All",
+    ],
+    "python.experiments.enabled": true,
+
+    // Default settings
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.fixAll": ["source.unusedImports"],
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "files.exclude": {
+        "django-crud/": true,
+        "crudapp/": true,
+        "**/__pycache__": true,
+        "**/.cache": true,
+        "**/.coverage": true,
+        "**/.coverage.*": true,
+        "**/.hypothesis": true,
+        "**/.mypy_cache": true,
+        "**/.nox": true,
+        "**/.pytest_cache": true,
+        "**/.ruff_cache": true,
+        "**/.tox": true
+    }
 }

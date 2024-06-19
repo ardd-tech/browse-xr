@@ -80,3 +80,7 @@ class GLTF_Plus_Image(AbstractImage):
 - [ ] Platforms other than the browser
 - [ ] Perfromance benchmarks for development and testing
 - [ ] Front end testing with Playwright
+- [x] SQLite
+- [ ] PostgreSQL
+
+## With VS Code
