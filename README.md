@@ -31,7 +31,7 @@ Also, thank you to Pillow, Puput that inspired some of the forthcoming developme
 
 This demo was first created for [Wagtail Space US 2024]().
 
-## What is WebXR and A-Frame?
+### What is WebXR and A-Frame?
 [WebXR](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API/Fundamentals) is a Web API that describes support for accessing Augmented reality and virtual relaity devices -- including your browser. These are standards defined by the W3C groups, the Immersive Web Community Group and the Immersive Web Working Group. 
 
 [A-Frame](https://aframe.io/) [1.6.0](https://aframe.io/docs/1.6.0/) is a web framework for building virtual reality experiences and helps integrate on top of HTML. It is the leading framework as of the development of this application. It includes a 3D scene graph represented in mark up language, as well as a composable structure to three.js declaratively. This demo is focused on web use case but it supports most VR headsets like Vive, Rift, Windows Mixed Reality, Cardboard, Oculus Go and can be used for Augmented Reality; where a camera is engaged and 3D forms are overlayed on video input. 
