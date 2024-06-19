@@ -4,13 +4,29 @@ html {
 
 /* TODO: Remove!*/
 
-div {
+#app {
     border: blue 3px solid;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#dis {
+    display: grid;
+    width: 80%;
+    height: 80%;
+    left: 0;
+    right:0;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1.5fr 1.5fr 1.5fr;
+}
+a-scene {
+    border: red 3px dashed;
 }
 
-a-scene {
-    border: red 3px solid;
-}
 
 *,
 *:before,
