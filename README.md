@@ -82,5 +82,8 @@ class GLTF_Plus_Image(AbstractImage):
 - [ ] Front end testing with Playwright
 - [x] SQLite
 - [ ] PostgreSQL
+- [ ] Dev Container settings
 
 ## With VS Code
+
+I recommend using [SQLTools extension](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools) to view and debug your files. 
