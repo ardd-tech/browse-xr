@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "wagtail",
     "modelcluster",
     "taggit",
+    "debug_toolbar",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -47,7 +48,13 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 ]
 
+INTERNAL_IPS = [
+    "127.0.0.1",
+    "localhost",
+]
+
 MIDDLEWARE = [
+     "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",

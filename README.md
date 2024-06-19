@@ -76,7 +76,7 @@ class GLTF_Plus_Image(AbstractImage):
     - [ ] [augmented reality](https://github.com/jeromeetienne/AR.js#augmented-reality-for-the-web-in-less-than-10-lines-of-html)
     - [ ] create better gallery block for standard and 3D image assets
 - [ ] Frontend browse
-- [ ] add Node interpreter and remove Aframe CDN
+- [ ] add Node server and remove A-Frame CDN
 - [ ] Platforms other than the browser
 - [ ] Perfromance benchmarks for development and testing
 - [ ] Front end testing with Playwright

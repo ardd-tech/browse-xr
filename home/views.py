@@ -2,6 +2,7 @@ from django.views.generic import CreateView, DetailView, ListView
 from wagtail.images.models import Image
 from .models import GLTF_Plus_Image
 
+
 class CreateGLTF(CreateView):
     model = GLTF_Plus_Image
     fields = '__all__'

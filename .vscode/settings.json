@@ -1,14 +1,7 @@
 {
     // Evaluating your database via VS Code
     "sqltools.useNodeRuntime": true,
-    "sqltools.connections": [
-        {
-            "previewLimit": 50,
-            "driver": "SQLite",
-            "name": "browse-boba",
-            "database": "${workspaceFolder:browse-boba}/db.sqlite3"
-        }
-    ],
+    "sqltools.connections": [],
     // Python
     "[python]": {
         "editor.formatOnType": true
